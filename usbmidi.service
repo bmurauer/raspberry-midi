@@ -1,0 +1,6 @@
+[Unit]
+Description=USB MIDI to DIN MIDI
+
+[Service]
+ExecStart=/home/pi/usbmidi/start.py
+ExecStop=/home/pi/usbmidi/stop.py

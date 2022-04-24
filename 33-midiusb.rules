@@ -1,0 +1,2 @@
+SUBSYSTEM=="usb", ACTION=="add", ENV{DEVTYPE}=="usb_device", RUN{program}="/bin/systemctl start usbmidi.service"
+SUBSYSTEM=="usb", ACTION=="unbind", ENV{DEVTYPE}=="usb_device", RUN{program}="/bin/systemctl stop usbmidi.service"
